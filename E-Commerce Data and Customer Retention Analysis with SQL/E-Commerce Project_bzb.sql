@@ -164,7 +164,7 @@ GROUP BY cust_id, YEAR(Order_Date), MONTH(Order_Date)
 
 --//////////////////////////////////
 
-/* 2.Create a ìviewî that keeps the number of monthly visits by users. (Show separately all months from the beginning  business)
+/* 2.Create a ‚Äúview‚Äù that keeps the number of monthly visits by users. (Show separately all months from the beginning  business)
 Don't forget to call up columns you might need later. */
 
 CREATE VIEW montly_visits AS 
@@ -227,8 +227,8 @@ WHERE DATEDIFF(MONTH,Order_Date,second_order) >0
 
 /* 5.Categorise customers using average time gaps. Choose the most fitted labeling model for you.
 For example: 
-Labeled as ìchurnî if the customer hasn't made another purchase for the months since they made their first purchase.
-Labeled as ìregularî if the customer has made a purchase every month.
+Labeled as ‚Äúchurn‚Äù if the customer hasn't made another purchase for the months since they made their first purchase.
+Labeled as ‚Äúregular‚Äù if the customer has made a purchase every month.
 Etc.*/
 
 SELECT *
@@ -257,7 +257,7 @@ FROM (
 --/////////////////////////////////////
 
 
---MONTH-WISE RETENT›ON RATE
+--MONTH-WISE RETENT√ùON RATE
 
 
 --Find month-by-month customer retention rate  since the start of the business.
@@ -303,4 +303,3 @@ FROM t1
 
 ---///////////////////////////////////
 
---Good luck!
